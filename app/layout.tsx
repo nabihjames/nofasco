@@ -12,7 +12,7 @@ import { CookiesProvider } from "next-client-cookies/server";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Chebaani",
+  title: "Nosafco Store",
   description:
     "Boutique en ligne de papeterie général, d'article scolaire, de fourniture de bureau et consommable informatique www.chebaani.com",
 };
