@@ -1,4 +1,24 @@
 "use client"
+interface TeamMember {
+    name: string;
+    role: string;
+    image: string;
+}
+
+const teamMembers: TeamMember[] = [
+    { name: 'Mohammad Fahad', role: 'Business Development and investment', image: '/assets/emp1.png' },
+    { name: 'Nabih Abdessemed', role: 'Lead Web Developer', image: '/assets/emp2.png' },
+    { name: 'Lily Amdo', role: 'Public Relations', image: '/assets/emp11.png' },
+    { name: 'Nasro Dimba', role: 'Logistics Support', image: '/assets/emp5.png' },
+    { name: 'Borima Mazo', role: 'Sales specialist', image: '/assets/emp4.png' },
+    { name: 'Mohamed Khahla', role: 'Lead Designer', image: '/assets/emp3.png' },
+    { name: 'Zinbo Abonga', role: 'Costumer Service', image: '/assets/emp10.png'},
+    { name: 'Bob Woo', role: 'Quality Manager', image: '/assets/emp8.png' },
+    { name: 'Abdelmalek Brahimi', role: 'Marketing Manager', image: '/assets/emp9.png' },
+    { name: 'Isofa Tempee', role: 'Accountant', image: '/assets/emp7.png' },
+    { name: 'Amy Lee', role: 'Suply Chain', image: '/assets/emp6.png' }
+];
+
 export default function Page() {
     return (
         <>
@@ -74,12 +94,24 @@ export default function Page() {
 
 
             {/* Section 4: Organigram */}
-            <section className="py-12">
-                <div className="container mx-auto text-center">
-                    <h2 className="text-3xl font-bold mb-4">Organigram</h2>
-                    <div className="bg-white shadow-md rounded-lg p-6">
-                        {/* Add your organigram here */}
-                        {/* You can use HTML/CSS to represent the organigram */}
+            <section className="relative py-12">
+                <div className="absolute inset-0">
+                    <img src="/assets/bg5.png" className="w-full h-full object-cover opacity-90" alt="Background" />
+                </div>
+                <div className="relative container mx-auto text-center">
+                    <h2 className="text-4xl font-bold mb-4 text-white">Meet Our Team</h2>
+                    <div className="p-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                            {teamMembers.map((member, index) => (
+                                <div key={index} className="flex flex-col items-center text-white">
+                                    <div className="text-md w-28 h-28 rounded-full flex items-center justify-center mb-2 overflow-hidden">
+                                        <img src={member.image} alt={member.name} className="object-cover w-full h-full" />
+                                    </div>
+                                    <div className="text-lg font-bold">{member.name}</div>
+                                    <div className="text-sm">{member.role}</div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </section>

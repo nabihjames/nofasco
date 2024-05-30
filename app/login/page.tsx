@@ -116,7 +116,7 @@ function page() {
         />
 
         <h1 className="m-2 mt-4 font-semibold font-gilory text-xl">
-          Connectez-vous à votre compte
+          Connect to your account
         </h1>
       </div>
 
@@ -159,7 +159,7 @@ function page() {
               className="my-5 bg-primaryui w-full font-gilory"
               type="submit"
               size="lg">
-              Connexion
+              Login
             </Button>
             <a href="/register">
               <Button
@@ -167,7 +167,7 @@ function page() {
                 className="my-2 text-primaryui w-full font-gilory"
                 type="button"
                 size="lg">
-                Créez un nouveau compte
+                Create a new account
               </Button>
             </a>
           </form>

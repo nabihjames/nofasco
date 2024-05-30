@@ -44,7 +44,7 @@ function Page() {
         </Breadcrumb>
       </div>
       <div className="flex flex-col justify-between mt-9 p-2">
-        <h1 className="text-sm">Votre commandes</h1>
+        <h1 className="text-sm">Your Orders</h1>
         <table className="table-auto mt-5">
           <thead>
             <tr className="border-b-[1px]">

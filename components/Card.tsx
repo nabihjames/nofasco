@@ -94,13 +94,13 @@ function Card({
 
       <div className="flex flex-col justify-between p-2">
         <h2 className="text-center font-medium text-sm pb-2 h-full">{name}</h2>
-        <p className="font-light text-center">livraison disponible</p>
+        <p className="font-light text-center">Available Delivery</p>
       </div>
 
       <div>
         <div className="py-full flex flex-col justify-between items-center w-full">
           <h2 className="font-semibold text-lg pb-2">
-            <span className="font-light text-sm">À partir de </span>
+            <span className="font-light text-sm">Starts from </span>
             {price}.00 $
           </h2>
         </div>
@@ -117,7 +117,7 @@ function Card({
           <Dialog>
             <DialogTrigger asChild>
               <Button className="bg-primaryui font-gilory w-1/2">
-                <span className="mr-2">Ajouter</span>
+                <span className="mr-2">Add to cart</span>
                 <img
                   src="/assets/shopping-cart.svg"
                   width={21}

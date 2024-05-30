@@ -53,7 +53,7 @@ function Navbar() {
                 {!BUSSINESS && (
                   <Button
                     variant="ghost"
-                    className="bg-secondaryui w-16 h-12 max-lg:w-12 max-lg:h-10"
+                    className="bg-white w-16 h-12 max-lg:w-12 max-lg:h-10"
                   >
                     <div className="relative">
                       {cart > 0 && (
@@ -74,7 +74,7 @@ function Navbar() {
               </a>
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex justify-center items-center gap-1">
-                  <Button className="bg-secondaryui w-16 h-12 max-lg:w-12 max-lg:h-12">
+                  <Button className="bg-white w-16 h-12 max-lg:w-12 max-lg:h-12">
                     <img
                       src="/assets/language.svg"
                       className="w-8 h-8"
@@ -158,22 +158,22 @@ function Navbar() {
                       <DropdownMenuItem>All Products</DropdownMenuItem>
                     </a>
                     <a href="/products?category=Scolaire">
-                      <DropdownMenuItem>Scolaire</DropdownMenuItem>
+                      <DropdownMenuItem></DropdownMenuItem>
                     </a>
                     <a href="/products?category=Bureau">
-                      <DropdownMenuItem>Bureau</DropdownMenuItem>
+                      <DropdownMenuItem></DropdownMenuItem>
                     </a>
                     <a href="/products?category=Art">
-                      <DropdownMenuItem>Art et Technique</DropdownMenuItem>
+                      <DropdownMenuItem></DropdownMenuItem>
                     </a>
                     <a href="/products?category=Informatique">
-                      <DropdownMenuItem>Informatique</DropdownMenuItem>
+                      <DropdownMenuItem></DropdownMenuItem>
                     </a>
                     <a href="/products?category=Livres">
-                      <DropdownMenuItem>Livres et Bordas</DropdownMenuItem>
+                      <DropdownMenuItem></DropdownMenuItem>
                     </a>
                     <a href="/products?category=Tirage">
-                      <DropdownMenuItem>Tirage et Impression</DropdownMenuItem>
+                      <DropdownMenuItem></DropdownMenuItem>
                     </a>
                   </DropdownMenuContent>
                 </DropdownMenu>

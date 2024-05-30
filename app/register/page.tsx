@@ -133,7 +133,7 @@ function page() {
       <div className="flex flex-col justify-center items-center">
         <div className="absolute">
           <h1 className="m-2 mt-4 font-semibold font-gilory text-xl">
-            Créez un compte client
+            Create a client account
           </h1>
 
           <div className="relative left-40 bottom-2">
@@ -253,7 +253,7 @@ function page() {
               className="my-5 bg-primaryui w-full font-gilory"
               type="submit"
               size="lg">
-              Suivant
+              Next
             </Button>
             <a href="/login">
               <Button
@@ -261,7 +261,7 @@ function page() {
                 className="my-2 text-primaryui w-full font-gilory"
                 type="button"
                 size="lg">
-                Vous avez déjà un compte
+               You already have an account
               </Button>
             </a>
           </form>

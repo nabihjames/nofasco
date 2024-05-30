@@ -66,25 +66,27 @@ export function Footer() {
             </div>
           </div>
           
-          <div className="col-span-1 md:col-span-4 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="col-span-1 md:col-span-2 grid grid-cols-3 lg:grid-cols-3 gap-14">
             <div>
               <h6 className="text-sm font-semibold text-gray-800 mb-2">
-                Accueil
+                About Nosafco
               </h6>
               <ul className="text-sm text-gray-600">
-                <li className="mb-1">Catégories</li>
-                <li className="mb-1">Nouveaux</li>
-                <li className="mb-1">Promotions</li>
+                <li className="mb-1">About us</li>
+                <li className="mb-1">Privacy Policy</li>
+                <li className="mb-1">Terms and Conditions</li>
+                <li className="mb-1">Payments and Refund</li>
               </ul>
             </div>
             <div>
               <h6 className="text-sm font-semibold text-gray-800 mb-2">
-                Catégories
+                Our Services
               </h6>
               <ul className="text-sm text-gray-600">
-                <li className="mb-1">Categories</li>
-                <li className="mb-1">Nouveaux</li>
-                <li className="mb-1">Promotions</li>
+                <li className="mb-1">Contact us</li>
+                <li className="mb-1">Counselling services</li>
+                <li className="mb-1">Solutions</li>
+                <li className="mb-1">Production lines</li>
               </ul>
             </div>
             <div>
@@ -92,16 +94,8 @@ export function Footer() {
                 Promotions
               </h6>
               <ul className="text-sm text-gray-600">
-                <li className="mb-1">Nouveaux</li>
+                <li className="mb-1">News</li>
                 <li className="mb-1">Promotions</li>
-              </ul>
-            </div>
-            <div>
-              <h6 className="text-sm font-semibold text-gray-800 mb-2">
-                Contact
-              </h6>
-              <ul className="text-sm text-gray-600">
-                <li className="mb-1">A Propos</li>
               </ul>
             </div>
           </div>

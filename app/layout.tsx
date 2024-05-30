@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Nosafco Store",
   description:
-    "Boutique en ligne de papeterie général, d'article scolaire, de fourniture de bureau et consommable informatique www.chebaani.com",
+    "",
 };
 
 export default function RootLayout({
@@ -41,12 +41,12 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           rel="stylesheet"
         />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/app/favicon.ico" type="image/x-icon" />
       </head>
       <body className={inter.className}>
         <main className="flex min-h-screen flex-col py-4 bg-white">
           <Navbar />
-          <div className="flex flex-col px-5">
+          <div className="flex flex-col">
             <MyReactQueryProvider>
               <CookiesProvider>
                 <ApolloWrapper>{children}</ApolloWrapper>

@@ -81,7 +81,7 @@ function page() {
                 onClick={() => handleSort("date")}
                 id="date"
               />
-              <Label htmlFor="date">Plus recent</Label>
+              <Label htmlFor="date">Most recent</Label>
             </div>
             <div className="flex items-center space-x-2 mt-2">
               <RadioGroupItem
@@ -90,7 +90,7 @@ function page() {
                 value="price"
                 id="price"
               />
-              <Label htmlFor="price">Prix(bas a élevé)</Label>
+              <Label htmlFor="price">Price(low to high)</Label>
             </div>
             <div className="flex items-center space-x-2 mt-2">
               <RadioGroupItem
@@ -99,7 +99,7 @@ function page() {
                 onClick={() => handleSort("price-down")}
                 id="price-down"
               />
-              <Label htmlFor="price-down">Prix(élevé a bas)</Label>
+              <Label htmlFor="price-down">Price(high to low)</Label>
             </div>
             <div className="flex items-center space-x-2 mt-2">
               <RadioGroupItem
@@ -108,7 +108,7 @@ function page() {
                 onClick={() => handleSort("nom")}
                 id="nom"
               />
-              <Label htmlFor="nom">Nom (A à Z)</Label>
+              <Label htmlFor="nom">Name (A to Z)</Label>
             </div>
             <div className="flex items-center space-x-2 mt-2">
               <RadioGroupItem
@@ -117,7 +117,7 @@ function page() {
                 onClick={() => handleSort("nom-a")}
                 id="nom-a"
               />
-              <Label htmlFor="nom-a">Nom (Z à A)</Label>
+              <Label htmlFor="nom-a">Name (Z to A)</Label>
             </div>
           </RadioGroup>
 

@@ -14,11 +14,11 @@ function page() {
           />
         </div>
         <h1 className="m-3 font-medium text-2xl text-gray-800 py-5 text-center max-md:text-lg">
-          Votre commande a été passée avec succès.
+          Your order has been done succesfully.
         </h1>
         <a href="/products">
           <Button className="bg-primaryui max-w-[282.23px] w-full m-2">
-            Continuer à parcourir le site
+            Continue to browse the website
           </Button>
         </a>
       </div>

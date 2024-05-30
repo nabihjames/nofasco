@@ -357,7 +357,7 @@ function InputForm() {
     email: user?.email || "",
     address: {
       address: "",
-      willaya: "",
+      willaya: "hidden",
       commun: "",
       phone: "",
     },
@@ -451,7 +451,7 @@ function InputForm() {
   return (
     <Form {...form}>
       <form id="form" onSubmit={form.handleSubmit(onSubmit)}>
-        <div className="space-y-4">
+        <div className="space-y-4 px-4">
           <FormLabel className="text-2xl text-primaryui font-medium">
             Informations Personelles
           </FormLabel>
@@ -587,7 +587,7 @@ function InputForm() {
                   </FormItem>
                 )}
               />
-              <FormField
+              {/* <FormField
                 control={form.control}
                 name="address.willaya"
                 render={({ field }) => (
@@ -611,7 +611,8 @@ function InputForm() {
                     <FormMessage />
                   </FormItem>
                 )}
-              />
+              /> */}
+              
             </div>
 
             <div>
@@ -649,8 +650,7 @@ function InputForm() {
             Paiement
           </FormLabel>
           <FormDescription className="text-gray-400 font-medium">
-            Nous offrons un paiement exclusif en ligne ou en espèces vers toutes
-            les wilayas.
+           We offer an exclusive payment methods where ever your location is
           </FormDescription>
 
           <div className="flex flex-col gap-1">

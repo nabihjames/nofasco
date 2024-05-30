@@ -14,10 +14,10 @@ export function Categories() {
             <img
               height={60}
               width={60}
-              src="/assets/3.png"
+              src="/assets/1.png"
               alt="backpack"
             />
-            <span className="text-sm text-center font-medium">Construction machinery</span>
+            <span className="text-sm text-center font-medium">Agricultural machinery</span>
           </motion.div>
         </a>
 
@@ -25,8 +25,8 @@ export function Categories() {
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex flex-col items-center p-4 border border-primaryui rounded-sm space-y-2 hover:cursor-pointer">
-            <img height={60} width={60} src="/assets/2.png" alt="desk" />
-            <span className="text-sm text-center font-medium">Car services</span>
+            <img height={60} width={60} src="/assets/3.png" alt="desk" />
+            <span className="text-sm text-center font-medium">Construction machinery</span>
           </motion.div>
         </a>
 
@@ -37,12 +37,12 @@ export function Categories() {
             <img
               height={60}
               width={60}
-              src="/assets/11.png"
+              src="/assets/9.png"
               alt="paint"
             />
 
             <span className="text-sm text-center font-medium">
-              Packaging
+              Mining Machines
             </span>
           </motion.div>
         </a>
@@ -54,11 +54,11 @@ export function Categories() {
             <img
               height={60}
               width={60}
-              src="/assets/4.png"
+              src="/assets/7.png"
               alt="paint"
             />
             <span className="text-sm text-center font-medium">
-              Food preparation
+              Medical industries 
             </span>
           </motion.div>
         </a>
@@ -67,9 +67,9 @@ export function Categories() {
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex flex-col items-center p-4 border border-primaryui rounded-sm space-y-2 hover:cursor-pointer">
-            <img height={60} width={60} src="/assets/6.png" alt="paint" />
+            <img height={60} width={60} src="/assets/14.png" alt="paint" />
             <span className="text-sm text-center font-medium">
-              Ironwork
+              Production Lines 
             </span>
           </motion.div>
         </a>
@@ -78,16 +78,19 @@ export function Categories() {
           <motion.div
             whileHover={{ scale: 1.05 }}
             className="flex flex-col items-center p-4 border border-primaryui rounded-sm space-y-2 hover:cursor-pointer">
-            <img height={60} width={60} src="/assets/17.png" alt="paint" />
+            <img height={60} width={60} src="/assets/4.png" alt="paint" />
             <span className="text-sm text-center font-medium">
-              Sewing machines
+              Food Preparation
             </span>
           </motion.div>
         </a>
       </div>
       <div className="flex justify-center">
         <a href="/products">
-          <Button className="mt-4 bg-gra" variant="ghost">
+          <Button className="mt-4 bg-gray" variant="ghost">
+            <span className="text-lg text-center font-bold">
+              Explore all Products
+            </span>
             <ChevronDown className="font-light" />
           </Button>
         </a>

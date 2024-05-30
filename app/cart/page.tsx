@@ -110,7 +110,7 @@ function page() {
   }, [data]);
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col px-4">
       <div className="py-16 p-6 flex justify-start items-start font-gilory font-semibold">
         <Breadcrumb>
           <BreadcrumbList>

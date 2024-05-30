@@ -28,33 +28,32 @@ export default function Home() {
           cards={relevantProducts}
           isLoading={isLoadingRelevantProducts}
         />
-        <div className="bg-gray-200 space-y-10 p-10 sm:flex sm:flex-row sm:items-center sm:justify-center sm:space-x-44 sm:p-16">
-          <div>
-            <img src="/assets/img1.png" width={400} alt="Picture" />
+        <div className="relative py-2">
+          <div className="absolute inset-0">
+            <img src="/assets/bg4.jpg" className="w-full h-full object-cover" alt="Background" />
           </div>
-          <div className="space-y-5 sm:space-y-5 sm:flex sm:flex-col sm:justify-center">
-            <div className="font-bold text-3xl text-center sm:text-left">
-              Who we are ?
+          <div className="relative container mx-auto space-y-10 p-10 sm:flex sm:flex-row sm:items-center sm:justify-center sm:space-x-44 sm:p-16">
+            <div>
+              <img src="/assets/img1.png" width={500} alt="Picture" />
             </div>
-            <div className="text-center text-[#6b7280] sm:text-left sm:w-96">
-              NOSAFCO STORE is a sales platform affiliated with the NOSAFCO GROUP aimed at supporting and inspiring entrepreneurs by providing industrial machinery that supports the industrial sector, along with appropriate advice for business success. We understand the challenges that business owners face.
-            </div>
-            <div className="flex justify-center sm:justify-start">
-              <button className="bg-[#6A742B] text-white rounded-md h-10 w-32 hover:bg-[#E0E316]">
-                Explore Story
-              </button>
+            <div className="space-y-8 md:space-y-8 md:flex md:flex-col md:justify-center">
+              <div className="font-bold text-white text-4xl text-center md:text-left">
+                Who we are ?
+              </div>
+              <div className="text-center text-white md:text-left md:w-96">
+                NOSAFCO STORE is a sales platform affiliated with the NOSAFCO GROUP aimed at supporting and inspiring entrepreneurs by providing industrial machinery that supports the industrial sector, along with appropriate advice for business success. We understand the challenges that business owners face.
+              </div>
+              <div className="flex justify-center sm:justify-start">
+                <button className="bg-[#6A742B] text-white rounded-md h-10 w-32 hover:bg-[#E0E316]">
+                  Explore Story
+                </button>
+              </div>
             </div>
           </div>
         </div>
+
         <Categories />
 
-
-        <SectionCards
-          title="What we recommend"
-          description="We recommend this selection for you!"
-          cards={newerProducts}
-          isLoading={isLoadingNewerProducts}
-        />
         <SectionCards
           title="Lines of Production"
           description="Start your project with our full service plans!"
@@ -98,9 +97,9 @@ export default function Home() {
               <p className="text-lg mt-1">Satisfied Clients</p>
             </div>
             <div className="p-4 bg-white shadow-lg rounded-lg text-center">
-              <img src="/assets/stat1.png" alt="Stat 2" className="mx-auto mb-2 w-20 h-20" />
-              <h3 className="text-lg font-bold">950+</h3>
-              <p className="text-lg mt-1">Work Hours</p>
+              <img src="/assets/quality.png" alt="Stat 2" className="mx-auto mb-2 w-20 h-20" />
+              <h3 className="text-lg font-bold">26+</h3>
+              <p className="text-lg mt-1">Years of Experience</p>
             </div>
             <div className="p-4 bg-white shadow-lg rounded-lg text-center">
               <img src="/assets/stat3.png" alt="Stat 3" className="mx-auto mb-2 w-20 h-20" />
@@ -148,7 +147,7 @@ export default function Home() {
 
 
       {/* Newsletter section */}
-      <section className="relative flex flex-col items-center justify-center bg-gradient-to-r from-[#6A742B] to-[#E0E316] sm:bg-gradient-to-r sm:from-[#6A742B] sm:to-[#E0E316] space-y-5 p-10 sm:flex sm:flex-col sm:items-center sm:justify-center sm:space-y-5 sm:p-10">
+      <section className="relative flex flex-col items-center justify-center bg-gradient-to-r from-[#6A742B] to-[#E0E316] space-y-5 p-10 sm:flex sm:flex-col sm:items-center sm:justify-center sm:space-y-5 sm:p-10">
         {/* Background image */}
         <div className="absolute inset-0 z-0 bg-cover bg-center" style={{ backgroundImage: "url('/assets/img6.png')" }}></div>
 
@@ -159,23 +158,26 @@ export default function Home() {
         </div>
 
         {/* Form */}
-        <div className="flex items-center justify-center">
+        <div className="relative z-10 flex items-center justify-center">
           <div className="rounded-lg">
-            <div className="flex">
+            <form className="flex">
               <input
-                type="text"
-                className="w-72 h-10 pl-4 text-base font-semibold bg-white rounded-l-lg sm:w-96 sm:h-10 sm:pl-4 sm:text-base sm:font-semibold sm:bg-white sm:rounded-l-lg"
+                type="email"
+                className="w-72 h-10 pl-4 text-base font-semibold bg-white text-black rounded-l-lg sm:w-96 sm:h-10 sm:pl-4 sm:text-base sm:font-semibold sm:bg-white sm:rounded-l-lg"
                 placeholder="Email here"
+                required
               />
-              <input
-                type="button"
-                value="Subscribe"
+              <button
+                type="submit"
                 className="p-2 font-semibold text-white bg-[#6A742B] rounded-tr-lg rounded-br-lg hover:bg-[#E0E316]"
-              />
-            </div>
+              >
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
       </section>
+
 
 
       {/* Customer reviews section */}
@@ -274,7 +276,7 @@ export default function Home() {
         <div className="container mx-auto max-w-6xl relative z-10">
           <h2 className="text-3xl font-bold text-white text-center mb-10">Contact Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
-            <form className="font-bold text-white space-y-4">
+            <form className="font-bold text-white space-y-2">
               <div>
                 <label className="text-lg block mb-2">Full Name</label>
                 <input type="text" className="w-full p-3 border rounded-lg text-black" />
@@ -282,6 +284,10 @@ export default function Home() {
               <div>
                 <label className="text-lg block mb-2">Email</label>
                 <input type="email" className="w-full p-3 border rounded-lg text-black" />
+              </div>
+              <div>
+                <label className="text-lg block mb-2">Phone Number</label>
+                <input type="Phone" className="w-full p-3 border rounded-lg text-black" />
               </div>
               <div>
                 <label className="text-lg block mb-2">Message</label>
