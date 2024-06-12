@@ -109,7 +109,7 @@ function ProductBusinessModel({
 
           <div className="py-2">
             <label className="text-left text-sm font-semibold text-secondaryui">
-              Quantité
+              Quantity
             </label>
             <InputQuantityMain quantity={quantity} setQuantity={setQuantity} />
           </div>
@@ -117,7 +117,7 @@ function ProductBusinessModel({
           {options && options.length > 0 && (
             <div className="py-2 mb-4">
               <label className="text-left text-sm font-semibold text-secondaryui">
-                Autre options
+                Other options
               </label>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-2 py-2 gap-2">
                 {options.map((option) => (

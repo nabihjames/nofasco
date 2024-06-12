@@ -176,13 +176,13 @@ function page() {
           <div className="p-7 font-gilory xl:w-1/3">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-lg font-semibold text-gray-700">
-                Résumé de la commande
+                Order Summary
               </h2>
           
             </div>
             <div className="flex justify-between items-center mb-4">
               <span className="text-sm font-semibold text-secondaryui">
-                Sous-total
+               Sub-total
               </span>
               <span className="text-lg font-semibold text-gray-800">
                 {subTotal}$
@@ -190,7 +190,7 @@ function page() {
             </div>
             <div className="flex justify-between items-center mb-4">
               <span className="text-sm font-semibold text-secondaryui">
-                Code promo
+                Promo Code
               </span>
               <span className="text-lg font-semibold text-gray-800">
                 {discountedPrice} $
@@ -219,12 +219,12 @@ function page() {
                       alt="Secure"
                       className="mr-2"
                     />
-                    Saisir un code promo
+                    Add Promo code
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[425px]">
                   <DialogHeader>
-                    <DialogTitle>Saisir un code promo</DialogTitle>
+                      <DialogTitle>Add Promo code</DialogTitle>
                   </DialogHeader>
                   <div className="grid gap-4 py-4">
                     <div className="flex justify-between items-center gap-1">
@@ -243,7 +243,7 @@ function page() {
                             onClick={() => {
                               handleValidateCoupon();
                             }}>
-                            Valider
+                            Validate
                           </Button>
                         </DialogClose>
                       </DialogFooter>
@@ -264,14 +264,14 @@ function page() {
                       alt="Secure"
                       className="mr-2"
                     />
-                    Ajouter une note
+                    Add a note
                   </Button>
                 </DialogTrigger>
                 <DialogContent className="sm:max-w-[425px]">
                   <DialogHeader>
-                    <DialogTitle>Ajouter une note</DialogTitle>
+                      <DialogTitle>Add a note</DialogTitle>
                     <DialogDescription>
-                      Ajoutez une touche personnelle à votre commande.
+                      Add your personal touch on your order.
                     </DialogDescription>
                   </DialogHeader>
                   <div className="flex justify-between items-center gap-1">
@@ -290,7 +290,7 @@ function page() {
                           onClick={() => {
                             handleAddNote();
                           }}>
-                          Valider
+                          Validate
                         </Button>
                       </DialogClose>
                     </DialogFooter>
@@ -314,31 +314,30 @@ function page() {
 
 const formSchema = z.object({
   firstName: z.string().min(2, {
-    message: "Le prénom doit contenir au moins 2 caractères.",
+    message: "The first name must contain at least 2 characters.",
   }),
   lastName: z.string().min(2, {
-    message: "Le nom doit contenir au moins 2 caractères.",
+    message: "The last name must contain at least 2 characters.",
   }),
   email: z.string().email({
-    message: "Entrez une adresse e-mail valide.",
+    message: "Enter a valid email address.",
   }),
-
   address: z.object({
     address: z.string().min(1, {
-      message: "Entrez une adresse valide.",
+      message: "Enter a valid address.",
     }),
     willaya: z.string().min(1, {
-      message: "Entrez une willaya valide.",
+      message: "Enter a valid city.",
     }),
     commun: z.string().min(1, {
-      message: "Entrez une commune valide.",
+      message: "Enter a valid commune.",
     }),
     phone: z.string().min(10, {
-      message: "Entrez un numéro de téléphone valide.",
+      message: "Enter a valid phone number.",
     }),
   }),
   stopDesk: z.string().min(1, {
-    message: "Entrez un lieu valide.",
+    message: "Enter a valid place.",
   }),
   paymentType: z.string().optional(),
 });
@@ -403,7 +402,7 @@ function InputForm() {
         isStopDesk: values.stopDesk === "au maison" ? true : false,
       })
       .then((res) => {
-        toast.success("Votre commande a été passée avec succès.", {
+        toast.success("your order has been validated successfully.", {
           position: "bottom-right",
           autoClose: 3000,
           hideProgressBar: false,
@@ -453,11 +452,10 @@ function InputForm() {
       <form id="form" onSubmit={form.handleSubmit(onSubmit)}>
         <div className="space-y-4 px-4">
           <FormLabel className="text-2xl text-primaryui font-medium">
-            Informations Personelles
+            Personal Informations
           </FormLabel>
           <FormDescription className="text-gray-400 font-medium">
-            Entrez vos informations personnelles : Commencez le processus de
-            paiement en fournissant vos détails pour une expérience fluide
+            Enter your personal information: Start the payment process by providing your details for a smooth experience.
           </FormDescription>
 
           <div className="py-5 pb-2 grid grid-cols-2 gap-2 max-w-2xl">
@@ -517,11 +515,10 @@ function InputForm() {
           </div>
 
           <FormLabel className="text-2xl text-primaryui font-medium">
-            Adresse et Livraison
+            Adress and Delivery
           </FormLabel>
           <FormDescription className="text-gray-400 font-medium">
-            Informations de livraison et adresse : Renseignez les détails
-            essentiels pour une livraison précise et sans encombre
+            Delivery information and address: Enter the essential details for accurate and hassle-free delivery.
           </FormDescription>
 
           <FormField
@@ -546,7 +543,7 @@ function InputForm() {
                             />
                           </FormControl>
                           <FormLabel className="text-primaryui" htmlFor="r1">
-                            Au bureau
+                            At office
                           </FormLabel>
                         </FormItem>
                         <FormItem className="flex items-center space-x-2 ml-2">
@@ -557,7 +554,7 @@ function InputForm() {
                             />
                           </FormControl>
                           <FormLabel className="text-primaryui" htmlFor="r1">
-                            Au maison
+                            At home
                           </FormLabel>
                         </FormItem>
                       </div>
@@ -647,7 +644,7 @@ function InputForm() {
           </div>
 
           <FormLabel className="text-2xl text-primaryui font-medium">
-            Paiement
+            Payment
           </FormLabel>
           <FormDescription className="text-gray-400 font-medium">
            We offer an exclusive payment methods where ever your location is
@@ -662,7 +659,7 @@ function InputForm() {
                   <FormControl>
                     <Select onValueChange={field.onChange} {...field}>
                       <SelectTrigger>
-                        <SelectValue placeholder="Moyen de paiement" />
+                        <SelectValue placeholder="Payment method" />
                       </SelectTrigger>
                       <SelectContent>
                         <SelectItem value="stripe">Stripe</SelectItem>

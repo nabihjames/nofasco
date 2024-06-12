@@ -7,7 +7,7 @@ function page() {
       <div className="flex flex-col justify-center items-center p-4 w-full">
         <div className="flex flex-col justify-center items-center w-fit">
           <img
-            src="/assets/success.png"
+            src="/assets/success.svg"
             width={282.23}
             height={320}
             alt="Non items"

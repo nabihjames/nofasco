@@ -70,7 +70,7 @@ function page() {
     <section className="flex max-lg:flex-col justify-between items-start w-full pb-12">
       <div className="flex flex-col justify-between h-full m-2">
         <h1 className="text-3xl font-semibold tracking-tight text">
-          Filtrer & <span className="lg:block">trier</span>
+          Filter & <span className="lg:block">Order</span>
         </h1>
         <div>
           <RadioGroup className="mt-6" defaultValue="option-one">

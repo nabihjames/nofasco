@@ -109,7 +109,7 @@ function page() {
 
       <div className="flex flex-col justify-center items-center">
         <img
-          src="/login-img.png"
+          src="/login.svg"
           width={372.81}
           height={81.27}
           alt="progress bar"

@@ -53,7 +53,6 @@ export default function Home() {
         </div>
 
         <Categories />
-
         <SectionCards
           title="Lines of Production"
           description="Start your project with our full service plans!"
@@ -61,7 +60,6 @@ export default function Home() {
           isLoading={isLoadingNewerProducts}
         />
       </div>
-
       {/* Two-grid section with a background image */}
       <div className="bg-cover bg-center py-16" style={{ backgroundImage: "url('/assets/img7.png')" }}>
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
@@ -305,14 +303,14 @@ export default function Home() {
                     <img src="/assets/world.svg" alt="Location 1 Icon" className="w-10 h-10" />
                     <div className="text-white">
                       <h4 className="text-lg font-bold text-black">The Main Center :</h4>
-                      <p>China - Guangzhou, La Paz Tower, 16 Freedom Street, 5th floor, Office 112. Phone and WhatsApp: +861945546633</p>
+                      <p>China - Guangzhou, La Paz Tower, 16 Freedom Street, 5th floor, Office 112. Phone and WhatsApp: +XXXXXXXXXX</p>
                     </div>
                   </li>
                   <li className="flex items-start space-x-6">
                     <img src="/assets/world.svg" alt="Location 2 Icon" className="w-10 h-10" />
                     <div className="text-white">
                       <h4 className="text-lg font-bold text-black">Branch 01 :</h4>
-                      <p>United Arab Emirates - Dubai, Al Maktoum Street, Moscow Plaza Tower, 9th floor, Office No. 95. Phone and WhatsApp: +971506031323</p>
+                      <p>United Arab Emirates - Dubai, Al Maktoum Street, Moscow Plaza Tower, 9th floor, Office No. 95. Phone and WhatsApp: +XXXXXXXXX</p>
                     </div>
                   </li>
                   <li className="flex items-start space-x-6">

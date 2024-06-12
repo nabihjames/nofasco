@@ -213,7 +213,7 @@ function page() {
                   })
                 ) : (
                   <div className="flex justify-center items-center font-semibold text-lg text-gray-700">
-                    Votre panier est vide
+                    Your Cart is empty
                   </div>
                 )}
               </div>
@@ -221,26 +221,12 @@ function page() {
               <div className="p-7 font-gilory xl:w-1/3">
                 <div className="flex justify-between items-center mb-4">
                   <h2 className="text-lg font-semibold text-gray-700">
-                    Résumé de la commande
+                    Order Summary
                   </h2>
-                  <a
-                    target="_blank"
-                    href="https://www.google.com/maps/place/%D9%88%D8%B1%D8%A7%D9%82%D8%A9+%D8%B4%D8%A8%D8%B9%D8%A7%D9%86%D9%89+papeterie+Chebaani%E2%80%AD/@35.5445632,6.1687318,15z/data=!4m6!3m5!1s0x12f41112e8d07479:0x9121171b7fc9ecc3!8m2!3d35.5445632!4d6.1687318!16s%2Fg%2F11g0w461w9?entry=ttu">
-                    <span className="flex text-sm bg-[#EBEBEB] rounded-full p-2 ml-2 font-semibold">
-                      <img
-                        src="/assets/location-01.svg"
-                        className="mr-2"
-                        width={22}
-                        height={22}
-                        alt="location"
-                      />
-                      Batna, Algérie
-                    </span>
-                  </a>
                 </div>
                 <div className="flex justify-between items-center mb-4">
                   <span className="text-sm font-semibold text-secondaryui">
-                    Sous-total
+                    Sub-total
                   </span>
                   <span className="text-lg font-semibold text-gray-800">
                     {subTotal}$
@@ -248,7 +234,7 @@ function page() {
                 </div>
                 <div className="flex justify-between items-center mb-4">
                   <span className="text-sm font-semibold text-secondaryui">
-                    Code promo
+                    Promo Code
                   </span>
                   <span className="text-lg font-semibold text-gray-800">
                     {discountedPrice} $
@@ -277,12 +263,12 @@ function page() {
                           alt="Secure"
                           className="mr-2"
                         />
-                        Saisir un code promo
+                        Add a Promo Code
                       </Button>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[425px]">
                       <DialogHeader>
-                        <DialogTitle>Saisir un code promo</DialogTitle>
+                        <DialogTitle>Write a promo code</DialogTitle>
                       </DialogHeader>
                       <div className="grid gap-4 py-4">
                         <div className="flex justify-between items-center gap-1">
@@ -301,7 +287,7 @@ function page() {
                                 onClick={() => {
                                   handleValidateCoupon();
                                 }}>
-                                Valider
+                                Validate
                               </Button>
                             </DialogClose>
                           </DialogFooter>
@@ -322,14 +308,14 @@ function page() {
                           alt="Secure"
                           className="mr-2"
                         />
-                        Ajouter une note
+                        Add a note
                       </Button>
                     </DialogTrigger>
                     <DialogContent className="sm:max-w-[425px]">
                       <DialogHeader>
                         <DialogTitle>Ajouter une note</DialogTitle>
                         <DialogDescription>
-                          Ajoutez une touche personnelle à votre commande.
+                          Add a personalised touch to your order
                         </DialogDescription>
                       </DialogHeader>
                       <div className="flex justify-between items-center gap-1">
@@ -348,7 +334,7 @@ function page() {
                               onClick={() => {
                                 handleAddNote();
                               }}>
-                              Valider
+                              Validate
                             </Button>
                           </DialogClose>
                         </DialogFooter>
@@ -366,13 +352,13 @@ function page() {
                       alt="Secure"
                       className="mr-2"
                     />
-                    Paiement sécurisé
+                    Secured payment
                   </span>
                   <a href="/payment">
                     <Button
                       className="bg-primaryui text-white font-medium text-sm px-6 py-3 rounded "
                       type="button">
-                      Paiment
+                      Payment
                     </Button>
                   </a>
                 </div>
@@ -389,11 +375,11 @@ function page() {
                 />
               </div>
               <h1 className="m-3 font-medium text-2xl text-gray-800">
-                Le Panier est vide
+                The cart is empty
               </h1>
               <a href="/products">
                 <Button className="bg-primaryui max-w-[282.23px] w-full m-2">
-                  Continuer à parcourir le site
+                  Continue to browse the website
                 </Button>
               </a>
             </div>

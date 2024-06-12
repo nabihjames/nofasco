@@ -123,7 +123,7 @@ function page() {
             <BreadcrumbSeparator />
             <BreadcrumbItem>
               <BreadcrumbPage className="font-semibold">
-                register
+                Register
               </BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
@@ -157,7 +157,7 @@ function page() {
                 render={({ field }) => (
                   <FormItem className="w-full">
                     <FormControl>
-                      <Input placeholder="Nom" maxLength={150} {...field} />
+                      <Input placeholder="First Name" maxLength={150} {...field} />
                     </FormControl>
 
                     <FormMessage />
@@ -171,7 +171,7 @@ function page() {
                 render={({ field }) => (
                   <FormItem className="w-full">
                     <FormControl>
-                      <Input placeholder="Prenom" maxLength={150} {...field} />
+                      <Input placeholder="Last Name" maxLength={150} {...field} />
                     </FormControl>
 
                     <FormMessage />
@@ -201,7 +201,7 @@ function page() {
                   <FormItem className="w-2/5">
                     <FormControl>
                       <Input
-                        placeholder="Téléphone"
+                        placeholder="Phone"
                         maxLength={150}
                         {...field}
                       />
@@ -220,7 +220,7 @@ function page() {
                 <FormItem className="w-full">
                   <FormControl>
                     <PasswordInput
-                      placeholder="Mot de passe"
+                      placeholder="Password"
                       maxLength={150}
                       {...field}
                     />
@@ -238,7 +238,7 @@ function page() {
                 <FormItem className="w-full">
                   <FormControl>
                     <PasswordInput
-                      placeholder="Confirmer le Mot de passe"
+                      placeholder="Confirm Password"
                       maxLength={150}
                       {...field}
                     />

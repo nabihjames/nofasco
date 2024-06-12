@@ -90,8 +90,8 @@ function HorizontalCard({
         draggable: true,
         progress: undefined,
       });
-    } catch (error) {}
- 
+    } catch (error) { }
+
     fetchCartCount();
     refetch();
   };
@@ -100,15 +100,16 @@ function HorizontalCard({
     <div
       key={key}
       style={{
-        maxHeight: "438px",
+        maxHeight: "600px", // Increase height
         maxWidth: "100%",
+        padding: "20px", // Increase padding for more space
       }}
-      className="border border-gray-200 rounded-md p-5">
+      className="border border-gray-200 rounded-md">
       <div className="flex">
         <div>
           <a href={`/product/${_id}`}>
             <img
-              className="rounded-md rounded-b-none object-contain h-48 mr-5"
+              className="rounded-md object-contain h-60 mr-5" // Increase image size
               src={image}
               alt="Card"
             />
@@ -117,7 +118,7 @@ function HorizontalCard({
 
         <div className="p-2 w-full">
           <div className="flex justify-between items-center w-full">
-            <h2 className="text-left font-medium text-md pb-2">{title}</h2>
+            <h2 className="text-left font-medium text-lg pb-2">{title}</h2>
             <Button
               onClick={handleDeleteItem}
               variant="ghost"
@@ -133,6 +134,10 @@ function HorizontalCard({
             </Button>
           </div>
 
+          <div className="text-left text-sm mb-4">
+            {description}
+          </div>
+
           <InputQuantity
             increment={increment}
             decrement={decrement}
@@ -140,7 +145,7 @@ function HorizontalCard({
             quantity={quantitySelected}
           />
 
-          <h2 className="font-semibold text-lg text-left pb-2 text-primaryui">
+          <h2 className="font-semibold text-xl text-left pb-2 text-primaryui">
             {price}.00 $
           </h2>
         </div>
